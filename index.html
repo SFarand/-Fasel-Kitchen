@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fasel — a candle-lit pasta & ash kitchen. Fresh handmade pasta, Afghan aush and Persian ash reshteh.">
+  <title>Fasel | Where Taste Meets Elegance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="header" id="header">
+    <nav class="nav container glass">
+      <a href="#home" class="logo">FASEL<span>kitchen</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#chef">Chef</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark and light mode">☾</button>
+        <a href="#contact" class="btn btn-outline nav-cta">Reserve</a>
+        <button class="icon-btn hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO SLIDESHOW ============ -->
+    <section class="hero" id="home" aria-label="Featured dishes slideshow">
+      <div class="slides" id="slides">
+        <div class="slide active" style="background-image:url('images/hero-pasta.jpg')" role="img" aria-label="Spaghetti pomodoro with cherry tomatoes and basil in a black bowl"></div>
+        <div class="slide" style="background-image:url('images/hero-ash.jpg')" role="img" aria-label="Persian ash reshteh with kashk, mint oil and crispy onions"></div>
+        <div class="slide" style="background-image:url('images/hero-alfredo.jpg')" role="img" aria-label="Creamy fettuccine alfredo with parmesan on a dark plate"></div>
+      </div>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content container">
+        <div class="hero-card">
+          <p class="eyebrow" id="heroEyebrow">Signature Pasta</p>
+          <h1>Fasel Kitchen</h1>
+          <p id="heroTitle" class="hero-dish">Spaghetti Pomodoro</p>
+          <p id="heroText">Handmade pasta · Fresh basil · Parmesan</p>
+          <div class="hero-buttons">
+            <a href="#menu" class="btn btn-primary">Explore Menu</a>
+            <a href="#contact" class="btn btn-ghost">Book a Table</a>
+          </div>
+        </div>
+      </div>
+
+      <button class="slide-arrow prev glass" id="prevSlide" aria-label="Previous slide">‹</button>
+      <button class="slide-arrow next glass" id="nextSlide" aria-label="Next slide">›</button>
+      <div class="dots" id="dots"></div>
+
+      <!-- Bottom plate strip -->
+      <div class="plate-strip" aria-label="Our plates">
+        <div class="strip-track" id="stripTrack"></div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about container reveal" id="about">
+      <div class="about-img glass">
+        <img src="images/aush.jpg" alt="Traditional Afghan aush soup with yogurt, meat sauce and dried mint">
+      </div>
+      <div class="about-text">
+        <p class="eyebrow">Our Story</p>
+        <h2>Two Kitchens, <em>One Table</em></h2>
+        <p>Fasel brings together the comfort of Afghan and Persian ash with the craft of Italian pasta. Our noodles are rolled by hand every morning, our broths simmer for eight hours, and our herbs come from local gardens.</p>
+        <div class="stats">
+          <div class="stat glass"><strong data-count="12">0</strong><span>Years</span></div>
+          <div class="stat glass"><strong data-count="24">0</strong><span>Dishes</span></div>
+          <div class="stat glass"><strong data-count="98">0</strong><span>% Happy</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MENU ============ -->
+    <section class="section container" id="menu">
+      <div class="section-head reveal">
+        <p class="eyebrow">Taste the Collection</p>
+        <h2>Our <em>Menu</em></h2>
+      </div>
+      <div class="filters reveal" id="filters">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="pasta">Pasta</button>
+        <button class="chip" data-filter="ash">Ash &amp; Soup</button>
+      </div>
+      <div class="menu-grid" id="menuGrid"></div>
+    </section>
+
+    <!-- ============ CHEF ============ -->
+    <section class="section container chef reveal" id="chef">
+      <div class="section-head">
+        <p class="eyebrow">The Art of Cooking</p>
+        <h2>Celebrated <em>Chefs</em></h2>
+        <p class="chef-note">Culinary inspirations from around the world — not affiliated with Fasel Kitchen.</p>
+      </div>
+      <div class="chef-roster">
+        <article class="glass"><span class="chef-number">01</span><h3>Massimo Bottura</h3><p>Italy</p><p>Celebrated for his creative interpretation of Italian culinary traditions.</p></article>
+        <article class="glass"><span class="chef-number">02</span><h3>Gordon Ramsay</h3><p>United Kingdom</p><p>Known for precise technique and contemporary European cooking.</p></article>
+        <article class="glass"><span class="chef-number">03</span><h3>Yotam Ottolenghi</h3><p>United Kingdom</p><p>Known for vibrant vegetables, fresh herbs and Middle Eastern flavours.</p></article>
+      </div>
+      <div class="chef-card glass">
+        <img src="images/seafood.jpg" alt="Seafood linguine with shrimp, mussels and cherry tomatoes">
+        <div>
+          <p class="eyebrow">Chef's Special</p>
+          <h2>Linguine <em>di Mare</em></h2>
+          <p>Chef Sadaf's tribute to the sea: fresh shrimp, mussels and roasted cherry tomatoes tossed in garlic-white wine butter.</p>
+          <div class="chef-prices">
+            <div><strong>$21</strong><span>Dinner plate</span></div>
+            <div><strong>4.9★</strong><span>Guest rating</span></div>
+          </div>
+          <button class="btn btn-primary" data-open="seafood">View Details</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section container reveal" id="reviews">
+      <div class="section-head">
+        <p class="eyebrow">Kind Words</p>
+        <h2>What Guests <em>Say</em></h2>
+      </div>
+      <div class="reviews">
+        <blockquote class="glass"><p>“The ash reshteh tasted exactly like my grandmother's. Unforgettable.”</p><cite>— Mariam K.</cite></blockquote>
+        <blockquote class="glass"><p>“Best carbonara in town, and the candle-lit room is pure magic.”</p><cite>— Ahmad R.</cite></blockquote>
+        <blockquote class="glass"><p>“Elegant, warm and delicious. We already booked our next dinner.”</p><cite>— Lina S.</cite></blockquote>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section container contact reveal" id="contact">
+      <div class="contact-info">
+        <p class="eyebrow">Reservations</p>
+        <h2>Book Your <em>Table</em></h2>
+        <p>Open daily from 12:00 to 23:00. Send us a message and we will confirm your reservation shortly.</p>
+        <ul class="info-list">
+          <li>📍 Shahr-e Naw, Kabul</li>
+          <li>📞 +93 700 000 000</li>
+          <li>✉️ hello@faselkitchen.com</li>
+        </ul>
+      </div>
+      <form class="form glass" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" placeholder="Your name">
+          <small class="error"></small>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com">
+          <small class="error"></small>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="guests">Guests</label>
+            <select id="guests" name="guests">
+              <option value="">Select</option>
+              <option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option>
+            </select>
+            <small class="error"></small>
+          </div>
+          <div class="field">
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date">
+            <small class="error"></small>
+          </div>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Any special requests?"></textarea>
+          <small class="error"></small>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send Reservation</button>
+        <p class="form-success" id="formSuccess" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo">FASEL<span>kitchen</span></a>
+      <p>© <span id="year"></span> Fasel Kitchen. Crafted with HTML, CSS &amp; JavaScript.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram" class="icon-btn">IG</a>
+        <a href="#" aria-label="Facebook" class="icon-btn">FB</a>
+        <a href="#" aria-label="X / Twitter" class="icon-btn">X</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top icon-btn" id="toTop" aria-label="Back to top">↑</button>
+
+  <!-- ============ MODAL ============ -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-box glass" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="icon-btn modal-close" id="modalClose" aria-label="Close">✕</button>
+      <img id="modalImg" src="" alt="">
+      <div class="modal-body">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <div class="modal-foot">
+          <strong id="modalPrice"></strong>
+          <a href="#contact" class="btn btn-primary" id="modalOrder">Reserve &amp; Order</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
